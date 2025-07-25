@@ -6,7 +6,7 @@ from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes
 conn = sqlite3.connect("budget.db")  
 cursor = conn.cursor()
 
-TOKEN = '8128709962:AAExalXg49hPWk3Gg8aTefRQGmX-VTYNCjc'
+TOKEN = ''
 
 async def start(update, context):
     await update.message.reply_text("Интересный факт: Морковки полезные. Мои команды: /products; /delete_product имя, количество; /add_product имя, количество,; /otpravit_sungatu_1000000000000000000_dollars")
